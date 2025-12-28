@@ -19,6 +19,8 @@
 
 ![System Demo](docs/images/system-demo.gif)
 
+Uploading 518591306-3681efd9-da26-4293-b7bf-c00654b183c6.mp4…
+
 *Real-time nut detection with PASS/FAIL indication*
 
 </div>
