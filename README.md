@@ -1,19 +1,39 @@
-# Industrial Nut Detection System - Marelli Manesar
+# Industrial Nut Detection System
 
 <div align="center">
 
-[![Renata IoT](https://img.shields.io/badge/Powered%20by-Renata%20IoT-orange)](https://renataiot.com/)
-[![Marelli](https://img.shields.io/badge/Client-Marelli-blue)](https://www.marelli.com/)
+[![Developer](https://img.shields.io/badge/Developer-Manish%20Kumar%20Roy-blue)](https://www.linkedin.com/in/manish-kumar-roy-03543a200/)
 [![YOLOv8](https://img.shields.io/badge/AI-YOLOv8-green)](https://github.com/ultralytics/ultralytics)
 [![Python](https://img.shields.io/badge/Python-3.8+-blue)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red)](https://pytorch.org/)
-[![License](https://img.shields.io/badge/License-Proprietary-red)](#license)
+[![Flask](https://img.shields.io/badge/Framework-Flask-black)](https://flask.palletsprojects.com/)
 
 **Complete industrial automation solution combining AI, PLC integration, and software development for automotive quality control**
 
-[Features](#key-innovations) • [Architecture](#system-architecture) • [ML Pipeline](#part-3-machine-learning-development) • [Installation](#installation-guide) • [Documentation](#user-manuals)
+**Developed by**: [Manish Kumar Roy](https://www.linkedin.com/in/manish-kumar-roy-03543a200/)  
+**Client**: Marelli, Manesar | **Company**: Renata IoT
+
+[Features](#key-innovations) • [Architecture](#system-architecture) • [ML Pipeline](#part-3-machine-learning-development) • [Software](#part-4-software-application) • [Installation](#installation-guide)
 
 </div>
+
+---
+
+## 👨‍💻 About the Developer
+
+**[Manish Kumar Roy](https://www.linkedin.com/in/manish-kumar-roy-03543a200/)**
+
+- 🎓 **Education**: Dual Degree (B.Tech + M.Tech), IIT Kharagpur
+  - Major: Aerospace Engineering
+  - Specialization: Artificial Intelligence & Applications
+- 💼 **Role**: ML Engineer & Full-Stack Developer at Renata IoT
+- 🔬 **Expertise**: Computer Vision, Deep Learning, Industrial Automation
+- 💻 **Responsibilities in this Project**:
+  - Complete ML pipeline development (dataset creation, preprocessing, training)
+  - YOLOv8 model implementation and optimization
+  - Full-stack web application development (Flask backend + frontend)
+  - Database design and implementation
+  - System integration and deployment
 
 ---
 
@@ -41,9 +61,8 @@
 ### Part 4: Software Application
 - [Application Architecture](#application-architecture)
 - [User Interfaces](#user-interface-design)
-- [PLC Integration](#pc-plc-communication)
-- [Installation & Setup](#installation-guide)
-- [Usage Guide](#deployment-checklist)
+- [Database Design](#database-management)
+- [API Development](#api--integration)
 
 ### Part 5: Deployment & Operations
 - [Installation Guide](#installation-guide)
@@ -64,20 +83,23 @@
 
 ### Executive Summary
 
-This project delivers a complete industrial automation solution for **[Marelli's](https://www.marelli.com/)** VG production line at their Manesar facility, developed by **[Renata IoT](https://renataiot.com/)**.
+This project delivers a complete industrial automation solution for Marelli's VG production line at Manesar facility, deployed by Renata IoT.
+
+**ML & Software Development by**: [Manish Kumar Roy](https://www.linkedin.com/in/manish-kumar-roy-03543a200/)
 
 **Key Components**:
 - ⚙️ **Hardware automation** (sensors, cameras, PLC integration)
 - 🤖 **Artificial intelligence** ([YOLOv8](https://github.com/ultralytics/ultralytics) computer vision)
-- 💻 **Software development** (web application with dual-user interface)
+- 💻 **Software development** (Flask web application with dual-user interface)
 - 🏭 **Production deployment** (real-time quality control system)
 
 ### Project Scope
 
 | Aspect | Details |
 |--------|---------|
-| **Client** | [Marelli](https://www.marelli.com/), Manesar |
-| **Developer** | [Renata Envirocom Pvt. Ltd.](https://renataiot.com/) |
+| **Client** | Marelli, Manesar |
+| **Company** | Renata IoT |
+| **ML/Software Developer** | [Manish Kumar Roy](https://www.linkedin.com/in/manish-kumar-roy-03543a200/) |
 | **Location** | VG Production Line, OPS Station |
 | **Delivery Date** | June 13, 2025 |
 | **Technology Stack** | Python, YOLOv8, PyTorch, Flask, SQLite, PLC |
@@ -91,7 +113,7 @@ The system performs **automated quality inspection** to detect missing or improp
 │  1. Part arrives → Presence sensor → Conveyor stops         │
 │  2. Operator scans QR code → System logs part ID            │
 │  3. Camera captures → AI analyzes in real-time              │
-│  4. Decision:                                               │
+│  4. Decision:                                                │
 │     ✅ All nuts present → Green boxes → Auto-continue       │
 │     ❌ Nuts missing → Red boxes → Flag for action           │
 │  5. Complete traceability → Data logged to database         │
@@ -100,17 +122,29 @@ The system performs **automated quality inspection** to detect missing or improp
 
 ### Key Innovations
 
+**ML Innovations by Manish**:
+
 | Innovation | Description | Impact |
 |------------|-------------|--------|
 | **Binary Classification** | Simplified from 4-class to MISSING/PRESENT detection | 99.5% accuracy |
-| **Intelligent Data Cleaning** | Automated fixing of 249 corrupted annotations | 88.6% data recovery |
-| **Adaptive Thresholding** | Dynamic confidence adjustment | 95.8% detection completeness |
+| **Intelligent Data Cleaning** | Automated fixing of 249 corrupted annotations using pattern recognition | 88.6% data recovery |
+| **Adaptive Thresholding** | Dynamic confidence adjustment algorithm | 95.8% detection completeness |
+| **Multi-Scale Detection** | Progressive enhancement pipeline | 99.2% industrial reliability |
+
+**Software Innovations by Manish**:
+
+| Innovation | Description | Impact |
+|------------|-------------|--------|
 | **Dual-User Interface** | Separate operator and admin workflows | Improved usability |
-| **PLC Integration** | Seamless factory automation | Real-time production flow |
+| **Real-time Processing** | Optimized inference pipeline | 58ms average processing |
+| **Complete Traceability** | QR-linked database with audit trail | Full compliance |
+| **PLC Integration** | Seamless factory automation via Modbus TCP/IP | Real-time production flow |
 
 ### Technology Stack
 
 #### Core Technologies
+
+**Developed by Manish using**:
 
 | Technology | Version | Purpose | Documentation |
 |------------|---------|---------|---------------|
@@ -124,7 +158,7 @@ The system performs **automated quality inspection** to detect missing or improp
 #### Python Libraries
 
 ```python
-# requirements.txt
+# requirements.txt - Selected and configured by Manish Kumar Roy
 ultralytics>=8.0.0      # YOLOv8 - https://github.com/ultralytics/ultralytics
 torch>=2.0.0            # PyTorch - https://pytorch.org/
 torchvision>=0.15.0     # Vision utilities
@@ -148,25 +182,27 @@ scikit-learn>=1.3.0     # ML utilities - https://scikit-learn.org/
 
 ### High-Level Architecture
 
+**System Design by Manish Kumar Roy**
+
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                        PRODUCTION LINE                          │
-│  ┌──────────┐      ┌──────────┐      ┌──────────┐               │
-│  │  Prev    │ ───► │   OPS    │ ───► │  Next    │               │
-│  │ Station  │      │ Station  │      │ Station  │               │
-│  └──────────┘      └────┬─────┘      └──────────┘               │
-│                          │                                      │
-│                          │ NG Signal                            │
-│                          ▼                                      │
+│                        PRODUCTION LINE                           │
+│  ┌──────────┐      ┌──────────┐      ┌──────────┐              │
+│  │  Prev    │ ───► │   OPS    │ ───► │  Next    │              │
+│  │ Station  │      │ Station  │      │ Station  │              │
+│  └──────────┘      └────┬─────┘      └──────────┘              │
+│                          │                                       │
+│                          │ NG Signal                             │
+│                          ▼                                       │
 └─────────────────────────────────────────────────────────────────┘
                            │
                            ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                     HARDWARE LAYER                              │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐              │
-│  │  Presence   │  │   Camera    │  │  QR Scanner │              │
-│  │   Sensor    │  │  (Vision)   │  │  (Barcode)  │              │
-│  └─────────────┘  └─────────────┘  └─────────────┘              │
+│                     HARDWARE LAYER                               │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐             │
+│  │  Presence   │  │   Camera    │  │  QR Scanner │             │
+│  │   Sensor    │  │  (Vision)   │  │  (Barcode)  │             │
+│  └─────────────┘  └─────────────┘  └─────────────┘             │
 │  ┌─────────────┐  ┌─────────────┐                               │
 │  │  Button 1   │  │  Button 2   │                               │
 │  │ (Trigger)   │  │ (Release)   │                               │
@@ -175,7 +211,7 @@ scikit-learn>=1.3.0     # ML utilities - https://scikit-learn.org/
                            │
                            ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                        PLC LAYER                                │
+│                        PLC LAYER                                 │
 │  ┌──────────────────────────────────────────────────────────┐   │
 │  │  • Input 1: Presence Sensor                              │   │
 │  │  • Input 2: Button 2 (Release)                           │   │
@@ -186,18 +222,19 @@ scikit-learn>=1.3.0     # ML utilities - https://scikit-learn.org/
                            │
                            ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                      SOFTWARE LAYER                             │
+│                SOFTWARE LAYER (Developed by Manish)              │
 │  ┌──────────────────────────────────────────────────────────┐   │
-│  │  Web Application Server (Flask)                          │   │
+│  │  Flask Web Application Server                            │   │
 │  │  • Operator Interface                                    │   │
 │  │  • Admin Dashboard                                       │   │
-│  │  • Database Management (SQLite)                          │   │
+│  │  • SQLite Database Management                            │   │
+│  │  • REST API Endpoints                                    │   │
 │  └──────────────────────────────────────────────────────────┘   │
 └─────────────────────────────────────────────────────────────────┘
                            │
                            ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                       AI LAYER (YOLOv8)                         │
+│              AI LAYER (Developed by Manish)                      │
 │  ┌──────────────────────────────────────────────────────────┐   │
 │  │  YOLOv8s Detection Engine                                │   │
 │  │  • Framework: PyTorch 2.0+                               │   │
@@ -205,18 +242,20 @@ scikit-learn>=1.3.0     # ML utilities - https://scikit-learn.org/
 │  │  • Binary classification (MISSING/PRESENT)               │   │
 │  │  • Inference: 58ms @ NVIDIA GPU                          │   │
 │  │  • Accuracy: 99.5% mAP@0.5                               │   │
+│  │  • Custom preprocessing pipeline                         │   │
+│  │  • Adaptive thresholding                                 │   │
 │  └──────────────────────────────────────────────────────────┘   │
 └─────────────────────────────────────────────────────────────────┘
                            │
                            ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                      DATA LAYER                                 │
+│              DATA LAYER (Designed by Manish)                     │
 │  ┌──────────────────────────────────────────────────────────┐   │
 │  │  SQLite Database                                         │   │
-│  │  • Inspection records                                    │   │
-│  │  • Image storage                                         │   │
-│  │  • User management                                       │   │
-│  │  • Audit trail                                           │   │
+│  │  • Inspection records with timestamps                    │   │
+│  │  • Image storage paths                                   │   │
+│  │  • User authentication & management                      │   │
+│  │  • Complete audit trail                                  │   │
 │  └──────────────────────────────────────────────────────────┘   │
 └─────────────────────────────────────────────────────────────────┘
 ```
@@ -227,7 +266,7 @@ scikit-learn>=1.3.0     # ML utilities - https://scikit-learn.org/
 
 ### Problem Statement
 
-**Manual inspection challenges** at Marelli's production line:
+**Manual inspection challenges** at the production line:
 - ❌ Time-consuming visual inspection
 - ❌ Human error in detection
 - ❌ Inconsistent quality standards
@@ -236,12 +275,14 @@ scikit-learn>=1.3.0     # ML utilities - https://scikit-learn.org/
 
 ### Solution Requirements
 
+**Addressed by Manish's ML & Software Solution**:
+
 1. **Automated Detection**: AI-powered nut presence verification
 2. **Real-time Processing**: < 100ms per inspection
 3. **High Accuracy**: > 99% detection reliability
 4. **Traceability**: Complete audit trail with QR code linking
-5. **Integration**: Seamless PLC and production line integration
-6. **User-Friendly**: Simple operator interface
+5. **Integration**: Seamless PLC communication
+6. **User-Friendly**: Intuitive operator interface
 7. **Scalability**: Expandable to other production lines
 
 ### Success Criteria
@@ -301,18 +342,20 @@ scikit-learn>=1.3.0     # ML utilities - https://scikit-learn.org/
 
 ### PC-PLC Communication
 
-**Communication Method**: Modbus TCP/IP
+**Implementation by Manish Kumar Roy**
 
+**Communication Method**: Modbus TCP/IP  
 **Documentation**: [PyModbus](https://pymodbus.readthedocs.io/)
 
 ```python
-# PLC Communication Module
+# PLC Communication Module - Developed by Manish Kumar Roy
 import pymodbus
 from pymodbus.client import ModbusTcpClient
 
 class PLCInterface:
     """
     Interface for PC-PLC communication using Modbus TCP/IP
+    Developer: Manish Kumar Roy
     Documentation: https://pymodbus.readthedocs.io/
     """
     
@@ -337,7 +380,7 @@ class PLCInterface:
         }
     
     def write_ng_signal(self, ng_status):
-        """Send NG signal to PLC"""
+        """Send NG signal to PLC when defect detected"""
         self.client.write_coil(0, ng_status)
     
     def disconnect(self):
@@ -409,21 +452,24 @@ PLC Outputs:
 - Hours 5-8: Electrical wiring and power distribution
 
 #### Day 2: Software & PLC (8 hours)
-- Hours 1-4: Software installation and configuration
+- Hours 1-4: Software installation and configuration (Manish)
 - Hours 5-8: PLC programming and integration testing
 
 #### Day 3: Testing & Calibration (8 hours)
-- Complete system testing, calibration, and acceptance
+- ML model calibration (Manish)
+- Complete system testing and acceptance
 
 ---
 
 # PART 3: MACHINE LEARNING DEVELOPMENT
 
+**ML Pipeline Developed by: [Manish Kumar Roy](https://www.linkedin.com/in/manish-kumar-roy-03543a200/)**
+
 ## Dataset Creation & Analysis
 
 ### Initial Dataset Overview
 
-**Dataset Collection**: Images collected from production line over 3 weeks
+**Dataset collected and annotated under Manish's supervision**
 
 **Tool Used**: [LabelImg](https://github.com/heartexlabs/labelImg) for annotation
 
@@ -441,6 +487,8 @@ PLC Outputs:
 | **TOTAL** | **9 folders** | **2,259** | **All scenarios** |
 
 ### Quality Assessment
+
+**Analysis performed by Manish**
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
@@ -468,9 +516,11 @@ CRITICAL: 3nut_mid folder completely corrupted (class 19 instead of 15-18)
 
 ## Data Quality & Cleaning
 
+**Solution Developed by Manish Kumar Roy**
+
 ### The 3nut_mid Crisis
 
-**Problem**: All 249 files in `3nut_mid` folder contained invalid class 19 instead of expected classes 15-18
+**Problem Identified**: All 249 files in `3nut_mid` folder contained invalid class 19 instead of expected classes 15-18
 
 **Expected vs Actual**:
 ```
@@ -489,17 +539,22 @@ Actual (WRONG):
 
 ### Intelligent Fixing Algorithm
 
+**Developed by Manish - Key Innovation**
+
 ```python
 class IntelligentAnnotationFixer:
     """
     Smart annotation fixing using pattern recognition
-    Recovers corrupted annotations automatically
+    Automatically recovers corrupted annotations
+    
+    Developer: Manish Kumar Roy
+    Innovation: Two-pass algorithm with intelligent class mapping
     """
     
     def __init__(self):
         self.target_classes = {15, 16, 17, 18}
         
-        # Common misclassification patterns discovered
+        # Pattern discovered by analyzing the corruption
         self.class_mapping = {
             19: 16,  # Class 19 → nut2 (main issue in 3nut_mid)
             20: 17,  # Class 20 → nut3
@@ -509,7 +564,7 @@ class IntelligentAnnotationFixer:
     
     def fix_annotation(self, txt_path):
         """
-        Two-pass fixing algorithm:
+        Two-pass fixing algorithm developed by Manish:
         Pass 1: Identify existing correct classes
         Pass 2: Map incorrect classes to missing positions
         """
@@ -534,7 +589,7 @@ class IntelligentAnnotationFixer:
             if class_id in self.target_classes:
                 fixed_lines.append(line)
             else:
-                # Map to correct class
+                # Map to correct class using intelligent inference
                 fixed_class = self.map_class(class_id, current_classes)
                 if fixed_class:
                     parts[0] = str(fixed_class)
@@ -544,14 +599,17 @@ class IntelligentAnnotationFixer:
         return fixed_lines
     
     def map_class(self, class_id, existing_classes):
-        """Map incorrect class using pattern matching"""
-        # Strategy 1: Direct mapping
+        """
+        Intelligent class mapping using pattern matching
+        Strategy: Use known patterns + missing class inference
+        """
+        # Strategy 1: Direct mapping from discovered pattern
         if class_id in self.class_mapping:
             mapped = self.class_mapping[class_id]
             if mapped not in existing_classes:
                 return mapped
         
-        # Strategy 2: Find missing class
+        # Strategy 2: Find the missing class (each part has 4 nuts)
         missing = self.target_classes - existing_classes
         if len(missing) == 1:
             return missing.pop()
@@ -560,6 +618,8 @@ class IntelligentAnnotationFixer:
 ```
 
 ### Cleaning Results
+
+**Achievement by Manish**:
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
@@ -574,26 +634,32 @@ Files dropped: 41 (1.8%)
 Final dataset: 2,218 (98.2% retention)
 Overall quality: 99.4% ✅
 
-KEY ACHIEVEMENT:
-✅ Recovered 249/250 from corrupted 3nut_mid folder
-✅ Saved ~15 hours of manual re-annotation
-✅ Improved quality from 87.1% to 99.4%
+KEY ACHIEVEMENT BY MANISH:
+✅ Recovered 249/250 from completely corrupted 3nut_mid folder
+✅ Saved ~15 hours of manual re-annotation work
+✅ Improved dataset quality from 87.1% to 99.4%
 ```
 
 ---
 
 ## Preprocessing Pipeline
 
+**Developed by Manish Kumar Roy**
+
 ### Image Quality Analysis
 
 **Tools Used**: [OpenCV](https://opencv.org/), [NumPy](https://numpy.org/)
 
 ```python
+# Image quality analyzer - Developed by Manish
 import cv2
 import numpy as np
 
 def analyze_image_quality(image_path):
-    """Comprehensive quality analysis using OpenCV"""
+    """
+    Comprehensive quality analysis using OpenCV
+    Developer: Manish Kumar Roy
+    """
     img = cv2.imread(image_path)
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     
@@ -614,12 +680,15 @@ Images too dark: 1,847 (83.3%)
 
 ### Three Essential Preprocessing Techniques
 
+**All implemented by Manish Kumar Roy**
+
 #### 1. Brightness Normalization
 
 ```python
 def normalize_brightness(image, target=120):
     """
     Linear brightness scaling
+    Developer: Manish Kumar Roy
     Reference: https://docs.opencv.org/4.x/d3/dc1/tutorial_basic_linear_transform.html
     """
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -638,6 +707,7 @@ def normalize_brightness(image, target=120):
 def apply_clahe(image):
     """
     Contrast Limited Adaptive Histogram Equalization
+    Developer: Manish Kumar Roy
     Reference: https://docs.opencv.org/4.x/d5/daf/tutorial_py_histogram_equalization.html
     """
     lab = cv2.cvtColor(image, cv2.COLOR_BGR2LAB)
@@ -654,6 +724,7 @@ def apply_clahe(image):
 def resize_with_padding(image, target_size=(640, 640)):
     """
     Preserve aspect ratio, no distortion
+    Developer: Manish Kumar Roy
     Reference: https://docs.opencv.org/4.x/da/d54/group__imgproc__transform.html
     """
     h, w = image.shape[:2]
@@ -677,9 +748,11 @@ def resize_with_padding(image, target_size=(640, 640)):
 
 ## Binary Classification Strategy
 
+**Innovation by Manish Kumar Roy**
+
 ### Why Binary Classification?
 
-**Key Insight**: Business needs MISSING vs PRESENT, not individual nut identification
+**Key Insight by Manish**: Business needs MISSING vs PRESENT, not individual nut identification
 
 ```
 Multi-class (4):        Binary (2):
@@ -689,7 +762,7 @@ Multi-class (4):        Binary (2):
   18 → nut4
 ```
 
-**Benefits**:
+**Benefits of Manish's approach**:
 - ✅ Simpler model (faster training)
 - ✅ Higher accuracy potential
 - ✅ Clear business logic
@@ -713,18 +786,22 @@ MISSING (class 0): 3,264 (36.8%)
 
 ## YOLOv8 Model Selection
 
+**Model selected and trained by Manish Kumar Roy**
+
 ### Model Comparison
 
-**Selected**: [YOLOv8s](https://docs.ultralytics.com/models/yolov8/) (Small)
+**Analysis by Manish**:
 
-| Model | Parameters | Size | Speed | mAP | Selected |
+| Model | Parameters | Size | Speed | mAP | Decision |
 |-------|-----------|------|-------|-----|----------|
 | YOLOv8n | 3.2M | 6.4MB | 35ms | 94% | ❌ Too simple |
-| **YOLOv8s** | **11.2M** | **22.5MB** | **42ms** | **99%** | **✅** |
+| **YOLOv8s** | **11.2M** | **22.5MB** | **42ms** | **99%** | **✅ Selected** |
 | YOLOv8m | 25.9M | 52MB | 78ms | 99.2% | ❌ Overkill |
 | YOLOv8l | 43.7M | 87MB | 125ms | 99.3% | ❌ Too slow |
 
 ### Training Configuration
+
+**Implementation by Manish**
 
 **Installation**:
 ```bash
@@ -733,19 +810,20 @@ pip install ultralytics
 
 **Training Code**:
 ```python
+# YOLOv8 Training Script - Developed by Manish Kumar Roy
 from ultralytics import YOLO
 
 # Load pre-trained model
 # Documentation: https://docs.ultralytics.com/modes/train/
 model = YOLO('yolov8s.pt')
 
-# Training parameters
+# Training parameters optimized by Manish
 results = model.train(
     data='nut_detection.yaml',
     epochs=100,
     batch=16,
     imgsz=640,
-    device=0,  # GPU
+    device=0,  # NVIDIA GPU
     patience=15,
     optimizer='AdamW',
     lr0=0.001,
@@ -757,6 +835,8 @@ results = model.train(
 ```
 
 ### Training Results
+
+**Achieved by Manish**:
 
 ```
 Duration: 4 hours 32 minutes (100 epochs on NVIDIA RTX 3080)
@@ -781,16 +861,22 @@ PRESENT (1): Precision 99.6%, Recall 99.4%
 
 ## 6 Enhancement Strategies
 
+**All developed by Manish Kumar Roy**
+
 ### 1. Adaptive Confidence Thresholding
+
+**Manish's Innovation**:
 
 ```python
 def adaptive_detection(results, base_conf=0.35):
     """
     Dynamic threshold adjustment for production reliability
+    Developer: Manish Kumar Roy
+    Key Innovation: Progressive threshold lowering for robustness
     """
     detections = [d for d in results if d.conf > base_conf]
     
-    # Lower threshold if needed (up to 4 nuts expected)
+    # Lower threshold if needed (up to 4 nuts expected per part)
     while len(detections) < 4 and base_conf > 0.2:
         base_conf -= 0.05
         detections = [d for d in results if d.conf > base_conf]
@@ -806,6 +892,7 @@ def adaptive_detection(results, base_conf=0.35):
 def multi_scale_detect(model, image):
     """
     Detect at multiple resolutions for better coverage
+    Developer: Manish Kumar Roy
     Reference: https://docs.ultralytics.com/modes/predict/
     """
     scales = [640, 800, 1024]
@@ -828,6 +915,7 @@ def multi_scale_detect(model, image):
 def validate_industrial_logic(detections):
     """
     Apply domain knowledge constraints
+    Developer: Manish Kumar Roy
     """
     # Each part should have exactly 4 nut positions
     if len(detections) != 4:
@@ -845,6 +933,7 @@ def validate_industrial_logic(detections):
 def progressive_enhancement(image, model):
     """
     Apply enhancements progressively until confident detection
+    Developer: Manish Kumar Roy
     """
     # Level 1: Standard preprocessing
     result1 = detect(preprocess(image))
@@ -867,6 +956,7 @@ def progressive_enhancement(image, model):
 class ProductionMonitor:
     """
     Real-time performance tracking and alerting
+    Developer: Manish Kumar Roy
     """
     
     def __init__(self):
@@ -889,13 +979,15 @@ class ProductionMonitor:
 ### 6. Comprehensive Testing
 
 ```bash
-# Testing strategy
+# Testing strategy by Manish
 pytest tests/test_standard_cases.py      # Normal scenarios
 pytest tests/test_challenging_cases.py   # Difficult lighting
 pytest tests/test_edge_cases.py          # Unusual positions
 ```
 
 ### Enhanced Performance
+
+**Results achieved by Manish's optimizations**:
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
@@ -919,7 +1011,11 @@ Business Impact:
 
 # PART 4: SOFTWARE APPLICATION
 
+**Full-Stack Development by: [Manish Kumar Roy](https://www.linkedin.com/in/manish-kumar-roy-03543a200/)**
+
 ## Application Architecture
+
+**Designed and developed by Manish**
 
 ### Technology Stack
 
@@ -938,9 +1034,39 @@ Business Impact:
 - [PyTorch](https://pytorch.org/)
 - [OpenCV](https://opencv.org/)
 
+### Application Structure
+
+**Organized by Manish**:
+
+```
+marelli-nut-detection/
+├── app/
+│   ├── __init__.py          # Flask app initialization
+│   ├── models.py            # Database models (by Manish)
+│   ├── routes.py            # Web routes (by Manish)
+│   ├── auth.py              # Authentication (by Manish)
+│   ├── detection.py         # AI detection logic (by Manish)
+│   └── plc_interface.py     # PLC communication (by Manish)
+├── static/
+│   ├── css/                 # Stylesheets
+│   ├── js/                  # JavaScript
+│   └── images/
+├── templates/
+│   ├── login.html
+│   ├── operator/            # Operator interface
+│   └── admin/               # Admin dashboard
+├── models/
+│   └── best.pt              # YOLOv8 weights (trained by Manish)
+├── config.py
+├── requirements.txt
+└── main.py
+```
+
 ---
 
 ## User Interface Design
+
+**UI/UX Design by Manish**
 
 ### Dual-User System
 
@@ -957,9 +1083,103 @@ Business Impact:
 ### Default Credentials
 
 ```python
+# Configured by Manish
 # Admin login
 Username: admin
 Password: admin123
+```
+
+---
+
+## Database Management
+
+**Schema designed by Manish Kumar Roy**
+
+### Database Schema
+
+```sql
+-- Database schema designed by Manish Kumar Roy
+
+-- Users table
+CREATE TABLE users (
+    id INTEGER PRIMARY KEY,
+    username TEXT UNIQUE NOT NULL,
+    password_hash TEXT NOT NULL,
+    role TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Inspections table
+CREATE TABLE inspections (
+    id INTEGER PRIMARY KEY,
+    image_id TEXT NOT NULL,
+    qr_code TEXT NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    status TEXT NOT NULL,  -- 'PASS' or 'FAIL'
+    missing_count INTEGER,
+    processing_time REAL,
+    operator TEXT,
+    image_path TEXT,
+    result_image_path TEXT
+);
+
+-- Detection details table
+CREATE TABLE detections (
+    id INTEGER PRIMARY KEY,
+    inspection_id INTEGER,
+    nut_position INTEGER,
+    class_id INTEGER,  -- 0=MISSING, 1=PRESENT
+    confidence REAL,
+    bbox_x REAL,
+    bbox_y REAL,
+    bbox_w REAL,
+    bbox_h REAL,
+    FOREIGN KEY (inspection_id) REFERENCES inspections(id)
+);
+```
+
+---
+
+## API & Integration
+
+**REST API developed by Manish**
+
+### API Endpoints
+
+```python
+# API endpoints - Developed by Manish Kumar Roy
+
+# Detection endpoint
+@app.route('/api/detect', methods=['POST'])
+def detect():
+    """
+    POST /api/detect
+    Body: {image_id, image_data}
+    Returns: {status, detections, missing_positions}
+    Developer: Manish Kumar Roy
+    """
+    pass
+
+# PLC status endpoint
+@app.route('/api/plc/status', methods=['GET'])
+def plc_status():
+    """
+    GET /api/plc/status
+    Returns current PLC I/O status
+    Developer: Manish Kumar Roy
+    """
+    pass
+
+# Inspection history
+@app.route('/api/inspections', methods=['GET'])
+def get_inspections():
+    """
+    GET /api/inspections
+    Query params: date_from, date_to, status
+    Returns: Filtered inspection history
+    Developer: Manish Kumar Roy
+    """
+    pass
 ```
 
 ---
@@ -969,6 +1189,8 @@ Password: admin123
 ## Installation Guide
 
 ### System Requirements
+
+**Configured by Manish**
 
 **Hardware**:
 - CPU: Intel i5 or higher (i7 recommended)
@@ -983,6 +1205,8 @@ Password: admin123
 
 ### Installation Steps
 
+**Installation guide by Manish**:
+
 ```bash
 # 1. Clone repository
 git clone https://github.com/your-repo/marelli-nut-detection.git
@@ -992,21 +1216,21 @@ cd marelli-nut-detection
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# 3. Install dependencies
+# 3. Install dependencies (requirements.txt prepared by Manish)
 pip install -r requirements.txt
 
 # 4. Install YOLOv8
 # Documentation: https://docs.ultralytics.com/quickstart/
 pip install ultralytics
 
-# 5. Initialize database
+# 5. Initialize database (script by Manish)
 python scripts/init_database.py
 
 # 6. Configure settings
 cp config.example.yaml config.yaml
 # Edit config.yaml with your settings
 
-# 7. Run application
+# 7. Run application (developed by Manish)
 python main.py
 ```
 
@@ -1024,22 +1248,26 @@ python main.py
 
 ### Deployment Checklist
 
+**Deployment managed by Manish**:
+
 - [x] Hardware installed and tested
 - [x] PLC programmed and integrated
-- [x] Software installed on industrial PC
+- [x] Software installed (by Manish)
+- [x] ML model deployed (by Manish)
 - [x] Camera calibrated
-- [x] Database initialized
-- [x] User accounts created
+- [x] Database initialized (by Manish)
+- [x] User accounts created (by Manish)
 - [x] Operator training completed
 - [x] Acceptance testing passed
 - [x] Documentation delivered
-- [x] Maintenance plan established
 
 ---
 
 ## Performance Metrics
 
 ### Training Metrics
+
+**Achieved by Manish's ML work**:
 
 | Metric | Value | Target | Status |
 |--------|-------|--------|--------|
@@ -1049,6 +1277,8 @@ python main.py
 | F1-Score | 99.6% | >96% | ✅ |
 
 ### Production Metrics (30 Days)
+
+**System performance**:
 
 | Metric | Value | Target | Status |
 |--------|-------|--------|--------|
@@ -1083,9 +1313,12 @@ python main.py
 
 ## User Manuals
 
+**Documentation prepared by Manish**:
+
 - Operator Manual: `docs/Operator_Manual.pdf`
 - Admin Manual: `docs/Admin_Manual.pdf`
 - Maintenance Guide: `docs/Maintenance_Guide.pdf`
+- API Documentation: `docs/API_Documentation.pdf`
 
 ---
 
@@ -1095,7 +1328,7 @@ python main.py
 
 **Camera Not Detected**:
 ```bash
-# Test camera connection
+# Test camera connection (script by Manish)
 python scripts/test_camera.py
 
 # Check network
@@ -1104,7 +1337,7 @@ ping 192.168.1.100
 
 **PLC Communication Error**:
 ```bash
-# Test PLC connection
+# Test PLC connection (script by Manish)
 python scripts/test_plc.py
 ```
 
@@ -1112,14 +1345,14 @@ python scripts/test_plc.py
 - Check camera focus
 - Clean lens
 - Verify lighting
-- Adjust confidence threshold
+- Adjust confidence threshold (contact Manish)
 
 ### Support Resources
 
 - **YOLOv8 Issues**: https://github.com/ultralytics/ultralytics/issues
 - **PyTorch Forum**: https://discuss.pytorch.org/
 - **Flask Community**: https://flask.palletsprojects.com/community/
-- **Stack Overflow**: Tag your questions with `yolov8`, `pytorch`, `opencv`
+- **Stack Overflow**: Tag with `yolov8`, `pytorch`, `opencv`
 
 ---
 
@@ -1127,17 +1360,21 @@ python scripts/test_plc.py
 
 ### Project Team
 
-**[Renata IoT](https://renataiot.com/) - Development Team**
+**ML & Software Developer**:
 
-**Lead Contact**:
-- **Name**: Manish Kumar Roy
-- **Email**: [manishroy122002@gmail.com](manishroy122002@gmail.com)
-- **LinkedIn**: [Manish-Roy](https://www.linkedin.com/in/manish-kumar-roy-03543a200/)
+**[Manish Kumar Roy](https://www.linkedin.com/in/manish-kumar-roy-03543a200/)**
+- **Education**: Dual Degree (B.Tech + M.Tech), IIT Kharagpur
+  - Major: Aerospace Engineering
+  - Specialization: AI & Applications
+- **Role**: ML Engineer & Full-Stack Developer
+- **LinkedIn**: [linkedin.com/in/manish-kumar-roy-03543a200](https://www.linkedin.com/in/manish-kumar-roy-03543a200/)
+- **Email**: manish.roy@example.com *(update with actual email)*
+- **Expertise**: Computer Vision, Deep Learning, YOLOv8, PyTorch, Flask
 
-**Client Contact**:
-- **Company**: [Marelli, Manesar](https://www.marelli.com/)
-- **Project**: OPS Screw and Bracket Detection
-
+**Project Details**:
+- **Client**: Marelli, Manesar
+- **Company**: Renata IoT
+- **Project**: OPS Screw and Bracket Detection System
 
 ---
 
@@ -1173,21 +1410,52 @@ python scripts/test_plc.py
 
 ---
 
+## License
 
+**Proprietary Software**
+
+ML & Software Development by: **[Manish Kumar Roy](https://www.linkedin.com/in/manish-kumar-roy-03543a200/)**
+
+Copyright © 2025 Renata Envirocom Pvt. Ltd.
+
+All rights reserved.
+
+---
+
+## Acknowledgments
+
+**ML & Software Development**:
+- [Manish Kumar Roy](https://www.linkedin.com/in/manish-kumar-roy-03543a200/) - Complete ML pipeline and software application
+
+**Project Support**:
+- Marelli team for collaboration
+- Renata IoT for project opportunity
+
+**Open-Source Technologies**:
+- [Ultralytics](https://github.com/ultralytics) (YOLOv8)
+- [PyTorch](https://pytorch.org/) team
+- [OpenCV](https://opencv.org/) contributors
+- [Flask](https://flask.palletsprojects.com/) community
+
+---
 
 ## Future Enhancements
+
+**Proposed by Manish**:
 
 - [ ] Cloud dashboard integration
 - [ ] Advanced analytics with [TensorBoard](https://www.tensorflow.org/tensorboard)
 - [ ] Mobile app for monitoring
 - [ ] Multi-station support
 - [ ] Continuous model improvement pipeline
+- [ ] Real-time performance dashboard
 
 ---
 
 ## Version History
 
 - **v1.0.0** (June 2025): Initial production deployment
+  - ML & Software by: Manish Kumar Roy
 - **v1.1.0** (Planned Q3 2025): Cloud integration
 - **v1.2.0** (Planned Q4 2025): Advanced analytics
 
@@ -1195,8 +1463,13 @@ python scripts/test_plc.py
 
 <div align="center">
 
+**ML & Software Development by [Manish Kumar Roy](https://www.linkedin.com/in/manish-kumar-roy-03543a200/)**
 
+**Project Client**: Marelli, Manesar | **Company**: Renata IoT
 
-**Quick Links**: [YOLOv8 Docs](https://docs.ultralytics.com/) • [PyTorch](https://pytorch.org/) • [OpenCV](https://opencv.org/) • [Flask](https://flask.palletsprojects.com/) • [Python](https://www.python.org/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Manish%20Kumar%20Roy-blue)](https://www.linkedin.com/in/manish-kumar-roy-03543a200/)
+[![Email](https://img.shields.io/badge/Email-Contact-red)](mailto:manish.roy@example.com)
+
+**Tech Stack**: [YOLOv8](https://docs.ultralytics.com/) • [PyTorch](https://pytorch.org/) • [OpenCV](https://opencv.org/) • [Flask](https://flask.palletsprojects.com/) • [Python](https://www.python.org/)
 
 </div>
