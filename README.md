@@ -91,7 +91,7 @@ The system performs **automated quality inspection** to detect missing or improp
 │  1. Part arrives → Presence sensor → Conveyor stops         │
 │  2. Operator scans QR code → System logs part ID            │
 │  3. Camera captures → AI analyzes in real-time              │
-│  4. Decision:                                                │
+│  4. Decision:                                               │
 │     ✅ All nuts present → Green boxes → Auto-continue       │
 │     ❌ Nuts missing → Red boxes → Flag for action           │
 │  5. Complete traceability → Data logged to database         │
@@ -150,23 +150,23 @@ scikit-learn>=1.3.0     # ML utilities - https://scikit-learn.org/
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                        PRODUCTION LINE                           │
-│  ┌──────────┐      ┌──────────┐      ┌──────────┐              │
-│  │  Prev    │ ───► │   OPS    │ ───► │  Next    │              │
-│  │ Station  │      │ Station  │      │ Station  │              │
-│  └──────────┘      └────┬─────┘      └──────────┘              │
-│                          │                                       │
-│                          │ NG Signal                             │
-│                          ▼                                       │
+│                        PRODUCTION LINE                          │
+│  ┌──────────┐      ┌──────────┐      ┌──────────┐               │
+│  │  Prev    │ ───► │   OPS    │ ───► │  Next    │               │
+│  │ Station  │      │ Station  │      │ Station  │               │
+│  └──────────┘      └────┬─────┘      └──────────┘               │
+│                          │                                      │
+│                          │ NG Signal                            │
+│                          ▼                                      │
 └─────────────────────────────────────────────────────────────────┘
                            │
                            ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                     HARDWARE LAYER                               │
-│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐             │
-│  │  Presence   │  │   Camera    │  │  QR Scanner │             │
-│  │   Sensor    │  │  (Vision)   │  │  (Barcode)  │             │
-│  └─────────────┘  └─────────────┘  └─────────────┘             │
+│                     HARDWARE LAYER                              │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐              │
+│  │  Presence   │  │   Camera    │  │  QR Scanner │              │
+│  │   Sensor    │  │  (Vision)   │  │  (Barcode)  │              │
+│  └─────────────┘  └─────────────┘  └─────────────┘              │
 │  ┌─────────────┐  ┌─────────────┐                               │
 │  │  Button 1   │  │  Button 2   │                               │
 │  │ (Trigger)   │  │ (Release)   │                               │
@@ -175,7 +175,7 @@ scikit-learn>=1.3.0     # ML utilities - https://scikit-learn.org/
                            │
                            ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                        PLC LAYER                                 │
+│                        PLC LAYER                                │
 │  ┌──────────────────────────────────────────────────────────┐   │
 │  │  • Input 1: Presence Sensor                              │   │
 │  │  • Input 2: Button 2 (Release)                           │   │
@@ -186,7 +186,7 @@ scikit-learn>=1.3.0     # ML utilities - https://scikit-learn.org/
                            │
                            ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                      SOFTWARE LAYER                              │
+│                      SOFTWARE LAYER                             │
 │  ┌──────────────────────────────────────────────────────────┐   │
 │  │  Web Application Server (Flask)                          │   │
 │  │  • Operator Interface                                    │   │
@@ -197,7 +197,7 @@ scikit-learn>=1.3.0     # ML utilities - https://scikit-learn.org/
                            │
                            ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                       AI LAYER (YOLOv8)                          │
+│                       AI LAYER (YOLOv8)                         │
 │  ┌──────────────────────────────────────────────────────────┐   │
 │  │  YOLOv8s Detection Engine                                │   │
 │  │  • Framework: PyTorch 2.0+                               │   │
@@ -210,7 +210,7 @@ scikit-learn>=1.3.0     # ML utilities - https://scikit-learn.org/
                            │
                            ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│                      DATA LAYER                                  │
+│                      DATA LAYER                                 │
 │  ┌──────────────────────────────────────────────────────────┐   │
 │  │  SQLite Database                                         │   │
 │  │  • Inspection records                                    │   │
@@ -1130,20 +1130,14 @@ python scripts/test_plc.py
 **[Renata IoT](https://renataiot.com/) - Development Team**
 
 **Lead Contact**:
-- **Name**: Anil Sagar
-- **Phone**: [+91 9810217013](tel:+919810217013)
-- **Email**: [anil.sagar@renataiot.com](mailto:anil.sagar@renataiot.com)
-- **Website**: https://renataiot.com/
-- **LinkedIn**: [Renata IoT](https://linkedin.com/company/renata-iot)
+- **Name**: Manish Kumar Roy
+- **Email**: [manishroy122002@gmail.com](manishroy122002@gmail.com)
+- **LinkedIn**: [Manish-Roy](https://www.linkedin.com/in/manish-kumar-roy-03543a200/)
 
 **Client Contact**:
 - **Company**: [Marelli, Manesar](https://www.marelli.com/)
 - **Project**: OPS Screw and Bracket Detection
 
-**Support**:
-- **Email**: [support@renataiot.com](mailto:support@renataiot.com)
-- **Hours**: Monday-Saturday, 9 AM - 6 PM IST
-- **Emergency**: 24/7 hotline available
 
 ---
 
@@ -1179,29 +1173,7 @@ python scripts/test_plc.py
 
 ---
 
-## License
 
-**Proprietary Software**
-
-Copyright © 2025 [Renata Envirocom Pvt. Ltd.](https://renataiot.com/)
-
-All rights reserved.
-
-Licensed exclusively to [Marelli, Manesar](https://www.marelli.com/)
-
----
-
-## Acknowledgments
-
-**Special thanks to**:
-- [Marelli](https://www.marelli.com/) team for collaboration
-- [Renata IoT](https://renataiot.com/) engineering team
-- Open-source community:
-  - [Ultralytics](https://github.com/ultralytics) (YOLOv8)
-  - [PyTorch](https://pytorch.org/) team
-  - [OpenCV](https://opencv.org/) contributors
-
----
 
 ## Future Enhancements
 
@@ -1223,11 +1195,7 @@ Licensed exclusively to [Marelli, Manesar](https://www.marelli.com/)
 
 <div align="center">
 
-**Developed with ❤️ by [Renata IoT](https://renataiot.com/) for [Marelli](https://www.marelli.com/)**
 
-[![Website](https://img.shields.io/badge/Website-renataiot.com-orange)](https://renataiot.com/)
-[![Email](https://img.shields.io/badge/Email-support%40renataiot.com-red)](mailto:support@renataiot.com)
-[![Phone](https://img.shields.io/badge/Phone-%2B91%209810217013-green)](tel:+919810217013)
 
 **Quick Links**: [YOLOv8 Docs](https://docs.ultralytics.com/) • [PyTorch](https://pytorch.org/) • [OpenCV](https://opencv.org/) • [Flask](https://flask.palletsprojects.com/) • [Python](https://www.python.org/)
 
